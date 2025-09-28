@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoseTools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <link rel="stylesheet" href="/RoseTools/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-50 dark:bg-gray-900 font-sans transition-colors duration-300"
+  >
+    <!-- 移动端汉堡菜单按钮 -->
+    <button
+      id="mobile-menu-btn"
+      class="fixed top-4 left-4 z-50 md:hidden bg-white dark:bg-gray-800 rounded-lg p-3 shadow-lg"
+    >
+      <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
+    </button>
+
+    <!-- 侧边栏 -->
+    <aside
+      id="sidebar"
+      class="fixed left-0 top-0 h-full w-80 bg-white dark:bg-gray-800 shadow-2xl transform -translate-x-full md:translate-x-0 transition-all duration-300 ease-in-out z-40"
+    >
+      <div class="flex flex-col h-full">
+        <!-- Logo和标题 -->
+        <div class="px-8 py-6 border-b border-gray-100 dark:border-gray-700">
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-compass text-white text-sm"></i>
+            </div>
+            <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">
+              RoseTools
+            </h1>
+          </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="px-8 py-6 border-b border-gray-100 dark:border-gray-700">
+          <div class="relative">
+            <i
+              class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"
+            ></i>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="搜索网站..."
+              class="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            />
+          </div>
+        </div>
+
+        <!-- 分类导航 -->
+        <div class="flex-1 overflow-y-auto">
+          <div class="px-8 py-4">
+            <h2
+              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4"
+            >
+              分类
+            </h2>
+            <nav id="category-nav" class="space-y-2">
+              <!-- 动态生成分类列表 -->
+            </nav>
+          </div>
+        </div>
+
+        <!-- 主题切换 -->
+        <div class="px-8 py-4 border-t border-gray-100 dark:border-gray-800">
+          <button
+            id="theme-toggle"
+            class="w-full flex items-center justify-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-200"
+          >
+            <i id="theme-icon" class="fas fa-moon mr-3 text-sm"></i>
+            <span id="theme-text">切换到深色模式</span>
+          </button>
+        </div>
+
+        <!-- 底部信息 -->
+        <div class="px-8 py-4 border-t border-gray-100 dark:border-gray-800">
+          <div class="text-xs text-gray-400 dark:text-gray-500 text-center">
+            <p>个人资源导航站</p>
+            <p class="mt-1">Built with ❤️</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="md:ml-80 min-h-screen">
+      <!-- 头部区域 -->
+      <header
+        class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-8 py-6"
+      >
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+              我的网站收藏
+            </h1>
+            <p class="text-gray-500 dark:text-gray-400 mt-1">
+              发现和管理有用的网站资源
+            </p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              class="bg-gray-100 dark:bg-gray-700 rounded-full px-4 py-2 text-sm text-gray-600 dark:text-gray-300"
+            >
+              <span id="total-sites">0</span> 个网站
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 内容区域 -->
+      <div class="px-8 py-8">
+        <!-- 搜索结果提示 -->
+        <div id="search-results-info" class="mb-6 hidden">
+          <p class="text-gray-600 dark:text-gray-400">
+            搜索结果：<span id="search-count">0</span> 个网站
+          </p>
+        </div>
+
+        <!-- 网站分类区域 -->
+        <div id="categories-container">
+          <!-- 动态生成分类和网站卡片 -->
+        </div>
+
+        <!-- 无结果提示 -->
+        <div id="no-results" class="text-center py-16 hidden">
+          <div class="text-gray-400 dark:text-gray-500">
+            <i class="fas fa-search text-6xl mb-4"></i>
+            <p class="text-xl mb-2">没有找到相关网站</p>
+            <p class="text-gray-500 dark:text-gray-400">试试其他关键词吧</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 遮罩层（移动端） -->
+    <div
+      id="sidebar-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden md:hidden"
+    ></div>
+
+    <script src="/RoseTools/script.js"></script>
+  </body>
+</html>
