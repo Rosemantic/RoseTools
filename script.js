@@ -98,7 +98,7 @@ async function initializeApp() {
 // 加载网站数据
 async function loadSitesData() {
   try {
-    const response = await fetch("/RoseTools/sites.json");
+    const response = await fetch("RoseTools/sites.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
