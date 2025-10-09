@@ -1,8 +1,15 @@
-{
+// 网站数据 - 由 sites.json 同步生成
+// 最后更新: 2025/10/09 23:23:01
+
+const SITES_DATA = {
   "categories": [
     {
       "name": "开发相关",
-      "subcategories": ["开发工具", "前端组件/库", "开发文档"]
+      "subcategories": [
+        "开发工具",
+        "前端组件/库",
+        "开发文档"
+      ]
     },
     {
       "name": "平面设计",
@@ -17,15 +24,23 @@
     },
     {
       "name": "图片素材",
-      "subcategories": ["图库", "壁纸"]
+      "subcategories": [
+        "图库",
+        "壁纸"
+      ]
     },
     {
       "name": "效率工具",
-      "subcategories": ["实用工具"]
+      "subcategories": [
+        "实用工具"
+      ]
     },
     {
       "name": "资源集合",
-      "subcategories": ["灵感平台", "综合资源"]
+      "subcategories": [
+        "灵感平台",
+        "综合资源"
+      ]
     }
   ],
   "sites": [
@@ -394,4 +409,4 @@
       "description": "GitHub 上的精选资源合集"
     }
   ]
-}
+};

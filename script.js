@@ -83,9 +83,9 @@ function toggleTheme() {
 }
 
 // 初始化应用
-async function initializeApp() {
+function initializeApp() {
   try {
-    await loadSitesData();
+    loadSitesData();
     renderCategories();
     renderAllSites();
     updateSiteCount();
@@ -96,13 +96,14 @@ async function initializeApp() {
 }
 
 // 加载网站数据
-async function loadSitesData() {
+const loadSitesData = () => {
   try {
-    const response = await fetch("/RoseTools/sites.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+    // 从 sites-data.js 加载数据（已通过 script 标签引入）
+    if (typeof SITES_DATA !== "undefined") {
+      sitesData = SITES_DATA;
+    } else {
+      throw new Error("SITES_DATA 未定义");
     }
-    sitesData = await response.json();
 
     // 验证数据格式
     if (!sitesData.categories || !sitesData.sites) {
@@ -133,7 +134,7 @@ async function loadSitesData() {
       ],
     };
   }
-}
+};
 
 // 设置事件监听器
 function setupEventListeners() {
@@ -148,6 +149,12 @@ function setupEventListeners() {
 
   mobileMenuBtn.addEventListener("click", toggleSidebar);
   overlay.addEventListener("click", closeSidebar);
+
+  // 侧边栏关闭按钮
+  const sidebarCloseBtn = document.getElementById("sidebar-close-btn");
+  if (sidebarCloseBtn) {
+    sidebarCloseBtn.addEventListener("click", closeSidebar);
+  }
 
   // 主题切换按钮
   const themeToggle = document.getElementById("theme-toggle");
@@ -692,7 +699,8 @@ function toggleSidebar() {
   } else {
     sidebar.classList.add("open");
     overlay.classList.remove("hidden");
-    btn.innerHTML = '<i class="fas fa-times text-gray-600"></i>';
+    // 隐藏汉堡菜单按钮避免遮挡logo
+    btn.classList.add("hidden");
   }
 }
 
@@ -704,7 +712,8 @@ function closeSidebar() {
 
   sidebar.classList.remove("open");
   overlay.classList.add("hidden");
-  btn.innerHTML = '<i class="fas fa-bars text-gray-600"></i>';
+  // 显示汉堡菜单按钮
+  btn.classList.remove("hidden");
 }
 
 // 显示错误信息

@@ -333,6 +333,92 @@ html.dark body {
   .sites-grid {
     grid-template-columns: 1fr;
   }
+
+  /* 移动端头部为菜单按钮留出空间 - 只调整左侧 */
+  main header .flex > div:first-child {
+    padding-left: 2.5rem;
+  }
+
+  /* 移动端内容区也需要调整 */
+  main > div.px-8 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* 汉堡菜单按钮添加过渡效果 */
+  #mobile-menu-btn {
+    transition: opacity 0.3s ease;
+  }
+
+  /* 侧边栏打开时隐藏汉堡菜单按钮 */
+  #mobile-menu-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* 超小屏幕优化（小于416px） */
+@media (max-width: 415px) {
+  /* 移动端头部标题区域padding调整 */
+  main header .flex > div:first-child {
+    padding-left: 2rem;
+  }
+
+  /* 减少主内容区的padding */
+  main > div.px-8 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* 确保卡片宽度完全一致 */
+  .website-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* 减少卡片内边距 */
+  .website-card {
+    padding: 1rem !important;
+  }
+
+  /* 调整图标大小 */
+  .site-icon {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+
+  .site-icon img,
+  .site-icon > div {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+
+  /* 调整标题和描述 */
+  .website-card h3 {
+    font-size: 1rem !important;
+  }
+
+  .website-card p {
+    font-size: 0.75rem !important;
+  }
+
+  /* 优化按钮 */
+  .btn-primary {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* 收藏按钮优化 */
+  .favorite-btn {
+    width: 2rem !important;
+    height: 2rem !important;
+    top: 0.75rem !important;
+    right: 0.75rem !important;
+  }
+
+  .favorite-btn i {
+    font-size: 0.75rem !important;
+  }
 }
 
 /* 加载状态 */
@@ -578,5 +664,23 @@ html.dark body {
 
   .website-card h3.pr-8 {
     margin-right: 0;
+  }
+
+  /* 移动端卡片高度一致性 */
+  .website-card {
+    min-height: auto;
+  }
+
+  /* 移动端按钮样式固定 */
+  .btn-primary {
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 80px;
+    justify-content: center;
+  }
+
+  /* 确保按钮内容不换行 */
+  .btn-primary i {
+    flex-shrink: 0;
   }
 }
