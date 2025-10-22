@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/10/09 23:23:01
+// 最后更新: 2025/10/22 18:11:28
 
 const SITES_DATA = {
   "categories": [
@@ -150,6 +150,13 @@ const SITES_DATA = {
       "description": "前端在线编写与展示平台"
     },
     {
+      "name": "SVG路径动画",
+      "url": "https://tools.ui-layouts.com/",
+      "category": "开发相关",
+      "subcategory": "前端组件/库",
+      "description": "一个创意工具箱,具有阴影、SVG、渐变和背景图案生成器、颜色。开源、快速且专为构建者打造。前端在线编写与展示平台"
+    },
+    {
       "name": "MDN",
       "url": "https://developer.mozilla.org/zh-CN/",
       "category": "开发相关",
@@ -211,6 +218,13 @@ const SITES_DATA = {
       "category": "平面设计",
       "subcategory": "字体",
       "description": "中文与艺术字体下载"
+    },
+    {
+      "name": "猫啃网",
+      "url": "https://www.maoken.com/",
+      "category": "平面设计",
+      "subcategory": "字体",
+      "description": "无版权可免费商用中文字体下载网站!"
     },
     {
       "name": "标小智",
