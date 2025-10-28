@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/10/22 18:11:28
+// 最后更新: 2025/10/28 22:21:20
 
 const SITES_DATA = {
   "categories": [
@@ -234,11 +234,11 @@ const SITES_DATA = {
       "description": "AI LOGO 生成器"
     },
     {
-      "name": "Uugai",
+      "name": "钙网",
       "url": "https://www.uugai.com/",
       "category": "平面设计",
       "subcategory": "LOGO",
-      "description": "在线 LOGO / 平面设计工具"
+      "description": "免费LOGO在线设计制作工具"
     },
     {
       "name": "稿定",
@@ -255,7 +255,7 @@ const SITES_DATA = {
       "description": "智能抠图与去背景工具"
     },
     {
-      "name": "PicWish",
+      "name": "佐糖",
       "url": "https://picwish.cn/",
       "category": "平面设计",
       "subcategory": "图像处理",
@@ -325,7 +325,7 @@ const SITES_DATA = {
       "description": "知识库与项目管理工具"
     },
     {
-      "name": "cli.im",
+      "name": "草料二维码",
       "url": "https://cli.im/",
       "category": "效率工具",
       "subcategory": "实用工具",
@@ -344,6 +344,34 @@ const SITES_DATA = {
       "category": "效率工具",
       "subcategory": "实用工具",
       "description": "在线文字转语音工具"
+    },
+    {
+      "name": "XMind",
+      "url": "https://xmind.cn/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "专业思维导图与头脑风暴工具"
+    },
+    {
+      "name": "Typora",
+      "url": "https://typoraio.cn/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "简洁优雅的 Markdown 编辑器"
+    },
+    {
+      "name": "Snipaste",
+      "url": "https://zh.snipaste.com/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "简单高效的截图与贴图工具"
+    },
+    {
+      "name": "Mocreak",
+      "url": "https://www.mocreak.com/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "Office 办公增强与部署工具"
     },
     {
       "name": "BootCDN",
@@ -402,7 +430,7 @@ const SITES_DATA = {
       "description": "综合设计与开发素材站"
     },
     {
-      "name": "AI Bot 导航",
+      "name": "AI工具集",
       "url": "https://ai-bot.cn/",
       "category": "资源集合",
       "subcategory": "综合资源",
