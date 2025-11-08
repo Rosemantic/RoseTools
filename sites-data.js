@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/10/28 22:21:20
+// 最后更新: 2025/11/04 18:25:08
 
 const SITES_DATA = {
   "categories": [
@@ -23,10 +23,11 @@ const SITES_DATA = {
       ]
     },
     {
-      "name": "图片素材",
+      "name": "素材资源",
       "subcategories": [
         "图库",
-        "壁纸"
+        "壁纸",
+        "综合素材"
       ]
     },
     {
@@ -157,6 +158,20 @@ const SITES_DATA = {
       "description": "一个创意工具箱,具有阴影、SVG、渐变和背景图案生成器、颜色。开源、快速且专为构建者打造。前端在线编写与展示平台"
     },
     {
+      "name": "GSAP",
+      "url": "https://gsap.com/",
+      "category": "开发相关",
+      "subcategory": "前端组件/库",
+      "description": "专业级 JavaScript 动画库"
+    },
+    {
+      "name": "Framer Motion",
+      "url": "https://www.framer.com/motion/",
+      "category": "开发相关",
+      "subcategory": "前端组件/库",
+      "description": "React 动画库，简单而强大"
+    },
+    {
       "name": "MDN",
       "url": "https://developer.mozilla.org/zh-CN/",
       "category": "开发相关",
@@ -183,6 +198,20 @@ const SITES_DATA = {
       "category": "平面设计",
       "subcategory": "设计工具",
       "description": "在线平面设计与海报制作工具"
+    },
+    {
+      "name": "Framer",
+      "url": "https://www.framer.com/",
+      "category": "平面设计",
+      "subcategory": "设计工具",
+      "description": "集设计、原型和网站构建于一体的现代化工具"
+    },
+    {
+      "name": "Webflow",
+      "url": "https://webflow.com/",
+      "category": "平面设计",
+      "subcategory": "设计工具",
+      "description": "可视化网站设计与开发平台"
     },
     {
       "name": "FontAwesome",
@@ -271,21 +300,21 @@ const SITES_DATA = {
     {
       "name": "Unsplash",
       "url": "https://unsplash.com/",
-      "category": "图片素材",
+      "category": "素材资源",
       "subcategory": "图库",
       "description": "高质量免费摄影图库"
     },
     {
       "name": "Pexels",
       "url": "https://www.pexels.com/zh-cn/",
-      "category": "图片素材",
+      "category": "素材资源",
       "subcategory": "图库",
       "description": "免费摄影与视频素材库"
     },
     {
       "name": "Pixabay",
       "url": "https://pixabay.com/",
-      "category": "图片素材",
+      "category": "素材资源",
       "subcategory": "图库",
       "description": "海量免费图片、插画与视频素材"
     },
@@ -299,23 +328,44 @@ const SITES_DATA = {
     {
       "name": "彼岸桌面",
       "url": "http://www.netbian.com/",
-      "category": "图片素材",
+      "category": "素材资源",
       "subcategory": "壁纸",
       "description": "高清电脑与手机壁纸网站"
     },
     {
       "name": "暖糖",
       "url": "https://www.nuantang.net/",
-      "category": "图片素材",
+      "category": "素材资源",
       "subcategory": "壁纸",
       "description": "高清动漫与风景壁纸"
     },
     {
       "name": "哲风壁纸",
       "url": "https://haowallpaper.com/",
-      "category": "图片素材",
+      "category": "素材资源",
       "subcategory": "壁纸",
       "description": "精品高清壁纸资源库"
+    },
+    {
+      "name": "千库网",
+      "url": "https://www.58pic.com/",
+      "category": "素材资源",
+      "subcategory": "综合素材",
+      "description": "设计模板、PNG素材、背景图片等综合设计素材库"
+    },
+    {
+      "name": "觅知网",
+      "url": "https://www.51miz.com/",
+      "category": "素材资源",
+      "subcategory": "综合素材",
+      "description": "平面设计模板、海报、插画等商用设计素材"
+    },
+    {
+      "name": "包图网",
+      "url": "https://ibaotu.com/",
+      "category": "素材资源",
+      "subcategory": "综合素材",
+      "description": "广告设计、电商设计等各类原创素材模板"
     },
     {
       "name": "Notion",
@@ -425,8 +475,8 @@ const SITES_DATA = {
     {
       "name": "站长素材",
       "url": "https://sc.chinaz.com/",
-      "category": "资源集合",
-      "subcategory": "综合资源",
+      "category": "素材资源",
+      "subcategory": "综合素材",
       "description": "综合设计与开发素材站"
     },
     {
