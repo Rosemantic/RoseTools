@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/11/04 18:25:08
+// 最后更新: 2025/11/08 22:00:21
 
 const SITES_DATA = {
   "categories": [
@@ -499,6 +499,20 @@ const SITES_DATA = {
       "category": "资源集合",
       "subcategory": "综合资源",
       "description": "GitHub 上的精选资源合集"
+    },
+    {
+      "name": "奇迹秀",
+      "url": "https://qijishow.com/",
+      "category": "资源集合",
+      "subcategory": "综合资源",
+      "description": "公益性设计资源平台，提供免费设计教程、工具和素材"
+    },
+    {
+      "name": "软仓",
+      "url": "https://www.ruancang.net/",
+      "category": "资源集合",
+      "subcategory": "综合资源",
+      "description": "软件资源下载与工具集合"
     }
   ]
 };
