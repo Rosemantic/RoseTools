@@ -156,6 +156,13 @@
       "description": "React 动画库，简单而强大"
     },
     {
+      "name": "Vue Bits",
+      "url": "https://vue-bits.dev/",
+      "category": "开发相关",
+      "subcategory": "前端组件/库",
+      "description": "Vue 开发组件库"
+    },
+    {
       "name": "MDN",
       "url": "https://developer.mozilla.org/zh-CN/",
       "category": "开发相关",
@@ -406,6 +413,13 @@
       "category": "效率工具",
       "subcategory": "实用工具",
       "description": "Office 办公增强与部署工具"
+    },
+    {
+      "name": "Huemint",
+      "url": "https://huemint.com/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "AI 驱动的配色方案生成工具"
     },
     {
       "name": "BootCDN",

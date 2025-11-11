@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/11/08 22:00:21
+// 最后更新: 2025/11/11 16:02:38
 
 const SITES_DATA = {
   "categories": [
@@ -170,6 +170,13 @@ const SITES_DATA = {
       "category": "开发相关",
       "subcategory": "前端组件/库",
       "description": "React 动画库，简单而强大"
+    },
+    {
+      "name": "Vue Bits",
+      "url": "https://vue-bits.dev/",
+      "category": "开发相关",
+      "subcategory": "前端组件/库",
+      "description": "Vue 开发组件库"
     },
     {
       "name": "MDN",
@@ -422,6 +429,13 @@ const SITES_DATA = {
       "category": "效率工具",
       "subcategory": "实用工具",
       "description": "Office 办公增强与部署工具"
+    },
+    {
+      "name": "Huemint",
+      "url": "https://huemint.com/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "AI 驱动的配色方案生成工具"
     },
     {
       "name": "BootCDN",
