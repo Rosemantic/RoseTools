@@ -1,292 +1,339 @@
 {
   "categories": [
     {
-      "name": "开发相关",
-      "subcategories": ["开发工具", "前端组件/库", "开发文档"]
+      "name": "AI 工具",
+      "subcategories": ["AI 对话助手", "AI 编程工具", "AI 设计工具"]
     },
     {
-      "name": "平面设计",
+      "name": "开发编程",
       "subcategories": [
-        "设计工具",
-        "图标/插画",
-        "字体",
-        "LOGO",
-        "图像处理",
-        "配色"
+        "代码托管",
+        "开发环境",
+        "前端框架/库",
+        "组件库",
+        "动画工具",
+        "开发文档",
+        "代码展示"
       ]
     },
     {
+      "name": "设计创作",
+      "subcategories": ["UI/UX 设计", "在线设计", "图像处理", "配色工具"]
+    },
+    {
       "name": "素材资源",
-      "subcategories": ["图库", "壁纸", "综合素材"]
+      "subcategories": ["图标", "字体", "图库", "壁纸", "综合素材", "LOGO 工具"]
     },
     {
       "name": "效率工具",
       "subcategories": ["实用工具"]
     },
     {
-      "name": "资源集合",
-      "subcategories": ["灵感平台", "综合资源"]
+      "name": "灵感与学习",
+      "subcategories": ["设计灵感", "资源导航"]
     }
   ],
   "sites": [
     {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 对话助手",
+      "description": "OpenAI 的智能对话与编程助手"
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai/",
+      "category": "AI 工具",
+      "subcategory": "AI 对话助手",
+      "description": "Anthropic 推出的 AI 智能对话助手"
+    },
+    {
+      "name": "Gemini",
+      "url": "https://gemini.google.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 对话助手",
+      "description": "Google 推出的 AI 对话与创作工具"
+    },
+    {
+      "name": "Cursor",
+      "url": "https://cursor.com/cn",
+      "category": "AI 工具",
+      "subcategory": "AI 编程工具",
+      "description": "基于 AI 的智能编程 IDE"
+    },
+    {
+      "name": "Windsurf",
+      "url": "https://windsurf.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 编程工具",
+      "description": "AI 驱动的代码编辑器和开发工具"
+    },
+    {
+      "name": "Qoder",
+      "url": "https://qoder.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 编程工具",
+      "description": "智能代码开发工具"
+    },
+    {
+      "name": "Trae",
+      "url": "https://trae.ai/",
+      "category": "AI 工具",
+      "subcategory": "AI 编程工具",
+      "description": "AI 辅助的开发与团队协作工具"
+    },
+    {
+      "name": "Liblib",
+      "url": "https://www.liblib.art/",
+      "category": "AI 工具",
+      "subcategory": "AI 设计工具",
+      "description": "AI 绘画与插画素材库"
+    },
+    {
+      "name": "Huemint",
+      "url": "https://huemint.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 设计工具",
+      "description": "AI 驱动的配色方案生成工具"
+    },
+    {
       "name": "GitHub",
       "url": "https://github.com/",
-      "category": "开发相关",
-      "subcategory": "开发工具",
+      "category": "开发编程",
+      "subcategory": "代码托管",
       "description": "全球最大开源代码托管与协作平台"
     },
     {
       "name": "VS Code",
       "url": "https://code.visualstudio.com/",
-      "category": "开发相关",
-      "subcategory": "开发工具",
+      "category": "开发编程",
+      "subcategory": "开发环境",
       "description": "微软出品的轻量级开源代码编辑器"
-    },
-    {
-      "name": "Cursor",
-      "url": "https://cursor.com/cn",
-      "category": "开发相关",
-      "subcategory": "开发工具",
-      "description": "基于 AI 的智能编程 IDE"
-    },
-    {
-      "name": "Trae",
-      "url": "https://trae.ai/",
-      "category": "开发相关",
-      "subcategory": "开发工具",
-      "description": "AI 辅助的开发与团队协作工具"
-    },
-    {
-      "name": "ChatGPT",
-      "url": "https://chat.openai.com/",
-      "category": "开发相关",
-      "subcategory": "开发工具",
-      "description": "OpenAI 的智能对话与编程助手"
-    },
-    {
-      "name": "Gemini",
-      "url": "https://gemini.google.com/",
-      "category": "开发相关",
-      "subcategory": "开发工具",
-      "description": "Google 推出的 AI 对话与创作工具"
-    },
-    {
-      "name": "Claude",
-      "url": "https://claude.ai/",
-      "category": "开发相关",
-      "subcategory": "开发工具",
-      "description": "Anthropic 推出的 AI 智能对话助手"
     },
     {
       "name": "ReactBits",
       "url": "https://www.reactbits.dev/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
+      "category": "开发编程",
+      "subcategory": "前端框架/库",
       "description": "React 开发技巧和模式集合"
     },
     {
-      "name": "Lenis",
-      "url": "https://lenis.darkroom.engineering/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "平滑滚动动画库"
-    },
-    {
-      "name": "LottieFiles",
-      "url": "https://lottiefiles.com/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "JSON 动画文件分享与工具"
-    },
-    {
-      "name": "Inspira UI",
-      "url": "https://v1.inspira-ui.com/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "现代 React UI 组件库"
-    },
-    {
-      "name": "Fancy Components",
-      "url": "https://www.fancycomponents.dev/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "各类前端组件代码示例"
-    },
-    {
-      "name": "Uiverse",
-      "url": "https://uiverse.io/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "开源 UI 样式与小组件集合"
-    },
-    {
-      "name": "NavNav",
-      "url": "https://navnav.co/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "导航栏 UI 组件示例库"
-    },
-    {
-      "name": "CodePen",
-      "url": "https://codepen.io/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "前端在线编写与展示平台"
-    },
-    {
-      "name": "SVG路径动画",
-      "url": "https://tools.ui-layouts.com/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "一个创意工具箱,具有阴影、SVG、渐变和背景图案生成器、颜色。开源、快速且专为构建者打造。前端在线编写与展示平台"
+      "name": "Vue Bits",
+      "url": "https://vue-bits.dev/",
+      "category": "开发编程",
+      "subcategory": "前端框架/库",
+      "description": "Vue 开发组件库"
     },
     {
       "name": "GSAP",
       "url": "https://gsap.com/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
+      "category": "开发编程",
+      "subcategory": "前端框架/库",
       "description": "专业级 JavaScript 动画库"
     },
     {
       "name": "Framer Motion",
       "url": "https://www.framer.com/motion/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
+      "category": "开发编程",
+      "subcategory": "前端框架/库",
       "description": "React 动画库，简单而强大"
     },
     {
-      "name": "Vue Bits",
-      "url": "https://vue-bits.dev/",
-      "category": "开发相关",
-      "subcategory": "前端组件/库",
-      "description": "Vue 开发组件库"
+      "name": "Inspira UI",
+      "url": "https://v1.inspira-ui.com/",
+      "category": "开发编程",
+      "subcategory": "组件库",
+      "description": "现代 React UI 组件库"
+    },
+    {
+      "name": "Fancy Components",
+      "url": "https://www.fancycomponents.dev/",
+      "category": "开发编程",
+      "subcategory": "组件库",
+      "description": "各类前端组件代码示例"
+    },
+    {
+      "name": "Uiverse",
+      "url": "https://uiverse.io/",
+      "category": "开发编程",
+      "subcategory": "组件库",
+      "description": "开源 UI 样式与小组件集合"
+    },
+    {
+      "name": "NavNav",
+      "url": "https://navnav.co/",
+      "category": "开发编程",
+      "subcategory": "组件库",
+      "description": "导航栏 UI 组件示例库"
+    },
+    {
+      "name": "Lenis",
+      "url": "https://lenis.darkroom.engineering/",
+      "category": "开发编程",
+      "subcategory": "动画工具",
+      "description": "平滑滚动动画库"
+    },
+    {
+      "name": "LottieFiles",
+      "url": "https://lottiefiles.com/",
+      "category": "开发编程",
+      "subcategory": "动画工具",
+      "description": "JSON 动画文件分享与工具"
+    },
+    {
+      "name": "SVG路径动画",
+      "url": "https://tools.ui-layouts.com/",
+      "category": "开发编程",
+      "subcategory": "动画工具",
+      "description": "创意工具箱（阴影、SVG、渐变和背景图案生成器）"
     },
     {
       "name": "MDN",
       "url": "https://developer.mozilla.org/zh-CN/",
-      "category": "开发相关",
+      "category": "开发编程",
       "subcategory": "开发文档",
       "description": "Web 技术与前端开发权威文档"
     },
     {
-      "name": "HappyHues",
-      "url": "https://www.happyhues.co/",
-      "category": "平面设计",
-      "subcategory": "配色",
-      "description": "提供配色灵感与调色板"
+      "name": "BootCDN",
+      "url": "https://www.bootcdn.cn/",
+      "category": "开发编程",
+      "subcategory": "开发文档",
+      "description": "中国前端公共 CDN 服务"
+    },
+    {
+      "name": "Cursor Directory",
+      "url": "https://cursor.directory/",
+      "category": "开发编程",
+      "subcategory": "开发文档",
+      "description": "Cursor 英文规则和教程"
+    },
+    {
+      "name": "Cursor Rules CN",
+      "url": "https://cursorrulescn.cn/",
+      "category": "开发编程",
+      "subcategory": "开发文档",
+      "description": "Cursor 中文规则与教程"
+    },
+    {
+      "name": "CodePen",
+      "url": "https://codepen.io/",
+      "category": "开发编程",
+      "subcategory": "代码展示",
+      "description": "前端在线编写与展示平台"
     },
     {
       "name": "Figma",
       "url": "https://www.figma.com/",
-      "category": "平面设计",
-      "subcategory": "设计工具",
+      "category": "设计创作",
+      "subcategory": "UI/UX 设计",
       "description": "在线协作式 UI/UX 设计工具"
-    },
-    {
-      "name": "Canva",
-      "url": "https://www.canva.com/",
-      "category": "平面设计",
-      "subcategory": "设计工具",
-      "description": "在线平面设计与海报制作工具"
     },
     {
       "name": "Framer",
       "url": "https://www.framer.com/",
-      "category": "平面设计",
-      "subcategory": "设计工具",
+      "category": "设计创作",
+      "subcategory": "UI/UX 设计",
       "description": "集设计、原型和网站构建于一体的现代化工具"
     },
     {
       "name": "Webflow",
       "url": "https://webflow.com/",
-      "category": "平面设计",
-      "subcategory": "设计工具",
+      "category": "设计创作",
+      "subcategory": "UI/UX 设计",
       "description": "可视化网站设计与开发平台"
     },
     {
-      "name": "FontAwesome",
-      "url": "https://fontawesome.com.cn/",
-      "category": "平面设计",
-      "subcategory": "图标/插画",
-      "description": "最常用的图标库"
-    },
-    {
-      "name": "Lordicon",
-      "url": "https://lordicon.com/",
-      "category": "平面设计",
-      "subcategory": "图标/插画",
-      "description": "动态矢量图标库"
-    },
-    {
-      "name": "IconFinder",
-      "url": "https://www.iconfinder.com/",
-      "category": "平面设计",
-      "subcategory": "图标/插画",
-      "description": "高质量矢量图标搜索引擎"
-    },
-    {
-      "name": "求字体",
-      "url": "https://www.qiuziti.com/",
-      "category": "平面设计",
-      "subcategory": "字体",
-      "description": "字体识别与下载"
-    },
-    {
-      "name": "字体搬运工",
-      "url": "https://font.sucai999.com/",
-      "category": "平面设计",
-      "subcategory": "字体",
-      "description": "中文与艺术字体下载"
-    },
-    {
-      "name": "猫啃网",
-      "url": "https://www.maoken.com/",
-      "category": "平面设计",
-      "subcategory": "字体",
-      "description": "无版权可免费商用中文字体下载网站!"
-    },
-    {
-      "name": "标小智",
-      "url": "https://www.logosc.cn/",
-      "category": "平面设计",
-      "subcategory": "LOGO",
-      "description": "AI LOGO 生成器"
-    },
-    {
-      "name": "钙网",
-      "url": "https://www.uugai.com/",
-      "category": "平面设计",
-      "subcategory": "LOGO",
-      "description": "免费LOGO在线设计制作工具"
+      "name": "Canva",
+      "url": "https://www.canva.com/",
+      "category": "设计创作",
+      "subcategory": "UI/UX 设计",
+      "description": "在线平面设计与海报制作工具"
     },
     {
       "name": "稿定",
       "url": "https://www.gaoding.com/",
-      "category": "平面设计",
-      "subcategory": "设计工具",
+      "category": "设计创作",
+      "subcategory": "在线设计",
       "description": "在线海报与平面设计平台"
     },
     {
       "name": "Remove.bg",
       "url": "https://www.remove.bg/zh",
-      "category": "平面设计",
+      "category": "设计创作",
       "subcategory": "图像处理",
       "description": "智能抠图与去背景工具"
     },
     {
       "name": "佐糖",
       "url": "https://picwish.cn/",
-      "category": "平面设计",
+      "category": "设计创作",
       "subcategory": "图像处理",
       "description": "AI 图片编辑与背景处理工具"
     },
     {
       "name": "D.design 抠图",
       "url": "https://d.design/toolbox/cutout",
-      "category": "平面设计",
+      "category": "设计创作",
       "subcategory": "图像处理",
       "description": "在线抠图与图像分割工具"
+    },
+    {
+      "name": "HappyHues",
+      "url": "https://www.happyhues.co/",
+      "category": "设计创作",
+      "subcategory": "配色工具",
+      "description": "提供配色灵感与调色板"
+    },
+    {
+      "name": "FontAwesome",
+      "url": "https://fontawesome.com.cn/",
+      "category": "素材资源",
+      "subcategory": "图标",
+      "description": "最常用的图标库"
+    },
+    {
+      "name": "Lordicon",
+      "url": "https://lordicon.com/",
+      "category": "素材资源",
+      "subcategory": "图标",
+      "description": "动态矢量图标库"
+    },
+    {
+      "name": "IconFinder",
+      "url": "https://www.iconfinder.com/",
+      "category": "素材资源",
+      "subcategory": "图标",
+      "description": "高质量矢量图标搜索引擎"
+    },
+    {
+      "name": "阿里巴巴矢量图标库",
+      "url": "https://www.iconfont.cn/",
+      "category": "素材资源",
+      "subcategory": "图标",
+      "description": "阿里巴巴矢量图标库"
+    },
+    {
+      "name": "求字体",
+      "url": "https://www.qiuziti.com/",
+      "category": "素材资源",
+      "subcategory": "字体",
+      "description": "字体识别与下载"
+    },
+    {
+      "name": "字体搬运工",
+      "url": "https://font.sucai999.com/",
+      "category": "素材资源",
+      "subcategory": "字体",
+      "description": "中文与艺术字体下载"
+    },
+    {
+      "name": "猫啃网",
+      "url": "https://www.maoken.com/",
+      "category": "素材资源",
+      "subcategory": "字体",
+      "description": "无版权可免费商用中文字体下载网站!"
     },
     {
       "name": "Unsplash",
@@ -308,13 +355,6 @@
       "category": "素材资源",
       "subcategory": "图库",
       "description": "海量免费图片、插画与视频素材"
-    },
-    {
-      "name": "Liblib",
-      "url": "https://www.liblib.art/",
-      "category": "平面设计",
-      "subcategory": "设计工具",
-      "description": "AI 绘画与插画素材库"
     },
     {
       "name": "彼岸桌面",
@@ -357,6 +397,34 @@
       "category": "素材资源",
       "subcategory": "综合素材",
       "description": "广告设计、电商设计等各类原创素材模板"
+    },
+    {
+      "name": "站长素材",
+      "url": "https://sc.chinaz.com/",
+      "category": "素材资源",
+      "subcategory": "综合素材",
+      "description": "综合设计与开发素材站"
+    },
+    {
+      "name": "享设计",
+      "url": "https://www.design006.com/",
+      "category": "素材资源",
+      "subcategory": "综合素材",
+      "description": "设计素材资源网站"
+    },
+    {
+      "name": "标小智",
+      "url": "https://www.logosc.cn/",
+      "category": "素材资源",
+      "subcategory": "LOGO 工具",
+      "description": "AI LOGO 生成器"
+    },
+    {
+      "name": "钙网",
+      "url": "https://www.uugai.com/",
+      "category": "素材资源",
+      "subcategory": "LOGO 工具",
+      "description": "免费LOGO在线设计制作工具"
     },
     {
       "name": "Notion",
@@ -415,101 +483,66 @@
       "description": "Office 办公增强与部署工具"
     },
     {
-      "name": "Huemint",
-      "url": "https://huemint.com/",
-      "category": "效率工具",
-      "subcategory": "实用工具",
-      "description": "AI 驱动的配色方案生成工具"
-    },
-    {
-      "name": "BootCDN",
-      "url": "https://www.bootcdn.cn/",
-      "category": "开发相关",
-      "subcategory": "开发文档",
-      "description": "中国前端公共 CDN 服务"
-    },
-    {
-      "name": "Cursor Directory",
-      "url": "https://cursor.directory/",
-      "category": "开发相关",
-      "subcategory": "开发文档",
-      "description": "Cursor 英文规则和教程"
-    },
-    {
-      "name": "Cursor Rules CN",
-      "url": "https://cursorrulescn.cn/",
-      "category": "开发相关",
-      "subcategory": "开发文档",
-      "description": "Cursor 中文规则与教程"
-    },
-    {
       "name": "SiteInspire",
       "url": "https://www.siteinspire.com/",
-      "category": "资源集合",
-      "subcategory": "灵感平台",
+      "category": "灵感与学习",
+      "subcategory": "设计灵感",
       "description": "网页设计灵感展示平台"
     },
     {
       "name": "Awwwards",
       "url": "https://www.awwwards.com/",
-      "category": "资源集合",
-      "subcategory": "灵感平台",
+      "category": "灵感与学习",
+      "subcategory": "设计灵感",
       "description": "国际网页设计奖与灵感库"
     },
     {
       "name": "Dribbble",
       "url": "https://dribbble.com/",
-      "category": "资源集合",
-      "subcategory": "灵感平台",
+      "category": "灵感与学习",
+      "subcategory": "设计灵感",
       "description": "全球设计师作品分享与灵感社区"
     },
     {
       "name": "站酷",
       "url": "https://www.zcool.com.cn/",
-      "category": "资源集合",
-      "subcategory": "灵感平台",
+      "category": "灵感与学习",
+      "subcategory": "设计灵感",
       "description": "设计师互动平台"
-    },
-    {
-      "name": "站长素材",
-      "url": "https://sc.chinaz.com/",
-      "category": "素材资源",
-      "subcategory": "综合素材",
-      "description": "综合设计与开发素材站"
     },
     {
       "name": "AI工具集",
       "url": "https://ai-bot.cn/",
-      "category": "资源集合",
-      "subcategory": "综合资源",
+      "category": "灵感与学习",
+      "subcategory": "资源导航",
       "description": "各类 AI 工具导航"
     },
     {
       "name": "Haitangw",
       "url": "https://www.haitangw.cc/",
-      "category": "资源集合",
-      "subcategory": "综合资源",
+      "category": "灵感与学习",
+      "subcategory": "资源导航",
       "description": "综合素材与设计资源导航"
     },
     {
       "name": "Awesome Lists",
       "url": "https://github.com/sindresorhus/awesome",
-      "category": "资源集合",
-      "subcategory": "综合资源",
+      "category": "灵感与学习",
+      "subcategory": "资源导航",
       "description": "GitHub 上的精选资源合集"
     },
     {
       "name": "奇迹秀",
       "url": "https://qijishow.com/",
-      "category": "资源集合",
-      "subcategory": "综合资源",
+      "category": "灵感与学习",
+      "subcategory": "资源导航",
       "description": "公益性设计资源平台，提供免费设计教程、工具和素材"
     },
     {
       "name": "软仓",
       "url": "https://www.ruancang.net/",
-      "category": "资源集合",
-      "subcategory": "综合资源",
+      "category": "灵感与学习",
+      "subcategory": "资源导航",
       "description": "软件资源下载与工具集合"
     }
   ]
