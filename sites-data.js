@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/11/18 15:13:57
+// 最后更新: 2025/11/19 16:25:14
 
 const SITES_DATA = {
   "categories": [
@@ -50,9 +50,17 @@ const SITES_DATA = {
       ]
     },
     {
+      "name": "影音娱乐",
+      "subcategories": [
+        "视频流媒体",
+        "音乐平台"
+      ]
+    },
+    {
       "name": "灵感与学习",
       "subcategories": [
         "设计灵感",
+        "学术写作",
         "资源导航"
       ]
     }
@@ -78,6 +86,27 @@ const SITES_DATA = {
       "category": "AI 工具",
       "subcategory": "AI 对话助手",
       "description": "Google 推出的 AI 对话与创作工具"
+    },
+    {
+      "name": "DeepSeek",
+      "url": "https://www.deepseek.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 对话助手",
+      "description": "国产深度学习 AI 对话助手"
+    },
+    {
+      "name": "豆包",
+      "url": "https://www.doubao.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 对话助手",
+      "description": "字节跳动推出的 AI 智能对话助手"
+    },
+    {
+      "name": "Kimi",
+      "url": "https://kimi.moonshot.cn/",
+      "category": "AI 工具",
+      "subcategory": "AI 对话助手",
+      "description": "Moonshot AI 推出的智能助手，擅长长文本处理"
     },
     {
       "name": "Cursor",
@@ -507,6 +536,20 @@ const SITES_DATA = {
       "description": "Office 办公增强与部署工具"
     },
     {
+      "name": "Vowa",
+      "url": "https://vowa.lat/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "VPN 网络代理工具，安全访问网络资源"
+    },
+    {
+      "name": "LestVPN",
+      "url": "https://letsvpn.world/",
+      "category": "效率工具",
+      "subcategory": "实用工具",
+      "description": "快速稳定的 VPN 网络代理服务"
+    },
+    {
       "name": "SiteInspire",
       "url": "https://www.siteinspire.com/",
       "category": "灵感与学习",
@@ -533,6 +576,41 @@ const SITES_DATA = {
       "category": "灵感与学习",
       "subcategory": "设计灵感",
       "description": "设计师互动平台"
+    },
+    {
+      "name": "中国知网",
+      "url": "https://www.cnki.net/",
+      "category": "灵感与学习",
+      "subcategory": "学术写作",
+      "description": "中国学术文献、论文、期刊数据库"
+    },
+    {
+      "name": "Grammarly",
+      "url": "https://www.grammarly.com/",
+      "category": "灵感与学习",
+      "subcategory": "学术写作",
+      "description": "AI 驱动的英语语法检查和写作优化工具"
+    },
+    {
+      "name": "DeepL",
+      "url": "https://www.deepl.com/",
+      "category": "灵感与学习",
+      "subcategory": "学术写作",
+      "description": "高质量 AI 翻译工具，支持多国语言"
+    },
+    {
+      "name": "QuillBot",
+      "url": "https://quillbot.com/",
+      "category": "灵感与学习",
+      "subcategory": "学术写作",
+      "description": "AI 写作辅助、改写和语法优化工具"
+    },
+    {
+      "name": "Aibiye",
+      "url": "https://www.aibiye.com/",
+      "category": "灵感与学习",
+      "subcategory": "学术写作",
+      "description": "AI 论文写作指导平台"
     },
     {
       "name": "AI工具集",
@@ -568,6 +646,83 @@ const SITES_DATA = {
       "category": "灵感与学习",
       "subcategory": "资源导航",
       "description": "软件资源下载与工具集合"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://www.netflix.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "全球领先的流媒体视频平台"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "全球最大的视频分享平台"
+    },
+    {
+      "name": "哔哩哔哩",
+      "url": "https://www.bilibili.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "国内领先的年轻人文化社区和视频平台"
+    },
+    {
+      "name": "腾讯视频",
+      "url": "https://v.qq.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "腾讯旗下综合视频平台"
+    },
+    {
+      "name": "爱奇艺",
+      "url": "https://www.iqiyi.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "国内知名在线视频平台"
+    },
+    {
+      "name": "优酷视频",
+      "url": "https://www.youku.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "阿里巴巴旗下视频平台"
+    },
+    {
+      "name": "抖音",
+      "url": "https://www.douyin.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "短视频社交平台"
+    },
+    {
+      "name": "小红书",
+      "url": "https://www.xiaohongshu.com/",
+      "category": "影音娱乐",
+      "subcategory": "视频流媒体",
+      "description": "生活方式分享与购物种草社区"
+    },
+    {
+      "name": "QQ音乐",
+      "url": "https://y.qq.com/",
+      "category": "影音娱乐",
+      "subcategory": "音乐平台",
+      "description": "腾讯旗下在线音乐平台"
+    },
+    {
+      "name": "网易云音乐",
+      "url": "https://music.163.com/",
+      "category": "影音娱乐",
+      "subcategory": "音乐平台",
+      "description": "网易旗下音乐流媒体平台"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://www.spotify.com/",
+      "category": "影音娱乐",
+      "subcategory": "音乐平台",
+      "description": "全球领先的音乐流媒体服务"
     }
   ]
 };
