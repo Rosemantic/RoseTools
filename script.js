@@ -356,17 +356,26 @@ function renderCategories() {
       const subcategory = this.dataset.subcategory;
       const type = this.dataset.type;
 
-      if (
+      const isMobile = window.innerWidth < 768;
+      const hasSubcategories =
         type === "main" &&
         sitesData.categories.find((cat) => cat.name === category)?.subcategories
-          ?.length > 0
-      ) {
-        // 主分类点击 - 切换展开/收缩状态并显示该分类内容
-        toggleCategoryExpansion(category);
-        handleCategoryClick(category, this, subcategory);
+          ?.length > 0;
+
+      if (hasSubcategories) {
+        // 主分类点击 - 切换展开/收缩状态
+        if (isMobile) {
+          // 移动端：只展开/收起子分类，不更新内容，不关闭侧边栏
+          toggleCategoryExpansion(category);
+        } else {
+          // 桌面端：展开并显示该分类内容
+          toggleCategoryExpansion(category);
+          handleCategoryClick(category, this, subcategory, false);
+        }
       } else {
         // 子分类点击或无子分类的主分类 - 显示内容
-        handleCategoryClick(category, this, subcategory);
+        // 在移动端关闭侧边栏
+        handleCategoryClick(category, this, subcategory, isMobile);
       }
     });
   });
@@ -401,7 +410,12 @@ function toggleCategoryExpansion(category) {
 }
 
 // 处理分类点击
-function handleCategoryClick(category, element, subcategory = null) {
+function handleCategoryClick(
+  category,
+  element,
+  subcategory = null,
+  shouldCloseSidebar = true
+) {
   // 检查是否从收藏夹切换到其他分类
   const previousActive = document.querySelector(".category-item.active");
   const isLeavingFavorites =
@@ -447,8 +461,8 @@ function handleCategoryClick(category, element, subcategory = null) {
     }
   }
 
-  // 移动端关闭侧边栏
-  if (window.innerWidth < 768) {
+  // 根据参数决定是否关闭侧边栏
+  if (shouldCloseSidebar) {
     closeSidebar();
   }
 }

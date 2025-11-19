@@ -62,22 +62,22 @@ html.dark body {
 
 .dark .category-item:hover {
   background-color: rgb(55, 65, 81);
-  color: rgb(229, 231, 235) !important;
+  color: rgb(229, 231, 235);
 }
 
 /* 深色模式下悬浮时图标和子元素颜色 */
 .dark .category-item:hover i {
-  color: rgb(229, 231, 235) !important;
+  color: rgb(229, 231, 235);
 }
 
 .dark .category-item:hover span {
-  color: rgb(229, 231, 235) !important;
+  color: rgb(229, 231, 235);
 }
 
 /* 深色模式下数字标记的悬浮效果 */
 .dark .category-item:hover .bg-gray-100 {
-  background-color: rgb(75, 85, 99) !important;
-  color: rgb(229, 231, 235) !important;
+  background-color: rgb(75, 85, 99);
+  color: rgb(229, 231, 235);
 }
 
 .category-item.active {
@@ -93,17 +93,17 @@ html.dark body {
 
 /* 深色模式下激活状态的子元素颜色 */
 .dark .category-item.active i {
-  color: rgb(147, 197, 253) !important;
+  color: rgb(147, 197, 253);
 }
 
 .dark .category-item.active span {
-  color: rgb(147, 197, 253) !important;
+  color: rgb(147, 197, 253);
 }
 
 /* 深色模式下激活状态的数字标记 */
 .dark .category-item.active .bg-gray-100 {
-  background-color: rgb(59, 130, 246) !important;
-  color: white !important;
+  background-color: rgb(59, 130, 246);
+  color: white;
 }
 
 .category-item.active::before {
@@ -334,23 +334,70 @@ html.dark body {
     grid-template-columns: 1fr;
   }
 
-  /* 移动端头部为菜单按钮留出空间 - 只调整左侧 */
-  main header .flex > div:first-child {
-    padding-left: 2.5rem;
+  /* 移动端头部样式重构 */
+  #main-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
   }
 
-  /* 移动端内容区也需要调整 */
-  main > div.px-8 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+  #header-content {
+    position: relative;
+    flex-wrap: nowrap;
   }
 
-  /* 汉堡菜单按钮添加过渡效果 */
+  #header-content > div:first-child {
+    padding-left: 3rem;
+    padding-right: 0.5rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  #main-header h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  #main-header p {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  /* 移动端网站数量标记 - 绝对定位到右上角 */
+  #header-stats {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    margin: 0;
+  }
+
+  #site-count-badge {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    line-height: 1.25;
+  }
+
+  /* 移动端内容区padding调整 */
+  main > .px-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* 汉堡菜单按钮样式优化 */
   #mobile-menu-btn {
     transition: opacity 0.3s ease;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  /* 侧边栏打开时隐藏汉堡菜单按钮 */
+  #mobile-menu-btn i {
+    font-size: 1.125rem;
+  }
+
   #mobile-menu-btn.hidden {
     opacity: 0;
     pointer-events: none;
@@ -359,65 +406,96 @@ html.dark body {
 
 /* 超小屏幕优化（小于416px） */
 @media (max-width: 415px) {
-  /* 移动端头部标题区域padding调整 */
-  main header .flex > div:first-child {
-    padding-left: 2rem;
+  /* 汉堡菜单按钮在超小屏幕上的调整 */
+  #mobile-menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+  }
+
+  #mobile-menu-btn i {
+    font-size: 1rem;
+  }
+
+  /* 超小屏幕头部标题区域调整 */
+  #header-content > div:first-child {
+    padding-left: 2.75rem;
+    padding-right: 0.5rem;
+  }
+
+  /* 超小屏幕网站数量标记进一步缩小 */
+  #header-stats {
+    top: 0.375rem;
+    right: 0;
+  }
+
+  #site-count-badge {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+
+  /* 超小屏幕标题字体进一步减小 */
+  #main-header h1 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  #main-header p {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
   }
 
   /* 减少主内容区的padding */
-  main > div.px-8 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+  main > .px-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   /* 确保卡片宽度完全一致 */
   .website-card {
     width: 100%;
     box-sizing: border-box;
-  }
-
-  /* 减少卡片内边距 */
-  .website-card {
-    padding: 1rem !important;
+    padding: 1rem;
   }
 
   /* 调整图标大小 */
-  .site-icon {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
+  .website-card .site-icon {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
-  .site-icon img,
-  .site-icon > div {
-    width: 1.75rem !important;
-    height: 1.75rem !important;
+  .website-card .site-icon img,
+  .website-card .site-icon > div {
+    width: 1.75rem;
+    height: 1.75rem;
   }
 
   /* 调整标题和描述 */
   .website-card h3 {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 
   .website-card p {
-    font-size: 0.75rem !important;
+    font-size: 0.75rem;
   }
 
   /* 优化按钮 */
-  .btn-primary {
-    padding: 0.5rem 0.75rem !important;
-    font-size: 0.75rem !important;
+  .website-card .btn-primary {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
   }
 
   /* 收藏按钮优化 */
-  .favorite-btn {
-    width: 2rem !important;
-    height: 2rem !important;
-    top: 0.75rem !important;
-    right: 0.75rem !important;
+  .website-card .favorite-btn {
+    width: 2rem;
+    height: 2rem;
+    top: 0.75rem;
+    right: 0.75rem;
   }
 
-  .favorite-btn i {
-    font-size: 0.75rem !important;
+  .website-card .favorite-btn i {
+    font-size: 0.75rem;
   }
 }
 
@@ -457,7 +535,7 @@ html.dark body {
 /* 主题切换动画 */
 .theme-transition * {
   transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease !important;
+    border-color 0.3s ease;
 }
 
 /* 子分类样式 */
@@ -474,7 +552,7 @@ html.dark body {
 
 .dark .subcategory-item:hover {
   background-color: rgb(51, 65, 85);
-  color: rgb(203, 213, 225) !important;
+  color: rgb(203, 213, 225);
 }
 
 .subcategory-item.active {
@@ -491,13 +569,13 @@ html.dark body {
 /* 深色模式下子分类激活状态的子元素颜色 */
 .dark .subcategory-item.active i,
 .dark .subcategory-item.active span {
-  color: rgb(96, 165, 250) !important;
+  color: rgb(96, 165, 250);
 }
 
 /* 深色模式下子分类激活状态的数字标记 */
 .dark .subcategory-item.active .bg-gray-50 {
-  background-color: rgb(37, 99, 235) !important;
-  color: white !important;
+  background-color: rgb(37, 99, 235);
+  color: white;
 }
 
 /* 子分类容器展开/收缩动画 */
@@ -533,6 +611,22 @@ html.dark body {
 
 .dark .main-category:hover .expand-icon {
   color: rgb(147, 197, 253);
+}
+
+/* 移动端主分类点击提示 */
+@media (max-width: 767px) {
+  .main-category .expand-icon {
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+
+  .main-category:active {
+    background-color: #e0f2fe;
+  }
+
+  .dark .main-category:active {
+    background-color: rgb(30, 58, 138);
+  }
 }
 
 /* 收藏功能样式 */
@@ -615,26 +709,26 @@ html.dark body {
 }
 
 .category-item[data-category="favorites"]:hover i {
-  color: #dc2626 !important;
+  color: #dc2626;
   animation: pulse 0.8s ease-in-out;
 }
 
 .dark .category-item[data-category="favorites"]:hover i {
-  color: #f87171 !important;
+  color: #f87171;
 }
 
 .category-item[data-category="favorites"].active i {
-  color: #dc2626 !important;
+  color: #dc2626;
 }
 
 .dark .category-item[data-category="favorites"].active i {
-  color: #f87171 !important;
+  color: #f87171;
 }
 
 /* 收藏数量标记特殊样式 */
 .favorites-count {
   background: linear-gradient(135deg, #fef2f2, #fee2e2);
-  color: #dc2626 !important;
+  color: #dc2626;
   border: 1px solid rgba(239, 68, 68, 0.1);
 }
 
@@ -644,7 +738,7 @@ html.dark body {
     rgba(239, 68, 68, 0.1),
     rgba(239, 68, 68, 0.2)
   );
-  color: #fca5a5 !important;
+  color: #fca5a5;
   border: 1px solid rgba(239, 68, 68, 0.2);
 }
 

@@ -1,5 +1,5 @@
 // 网站数据 - 由 sites.json 同步生成
-// 最后更新: 2025/11/19 16:25:14
+// 最后更新: 2025/11/19 17:24:13
 
 const SITES_DATA = {
   "categories": [
@@ -142,6 +142,20 @@ const SITES_DATA = {
       "category": "AI 工具",
       "subcategory": "AI 设计工具",
       "description": "AI 绘画与插画素材库"
+    },
+    {
+      "name": "即梦AI",
+      "url": "https://jimeng.jianying.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 设计工具",
+      "description": "字节跳动旗下 AI 绘画创作平台"
+    },
+    {
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com/",
+      "category": "AI 工具",
+      "subcategory": "AI 设计工具",
+      "description": "领先的 AI 艺术图像生成工具"
     },
     {
       "name": "Huemint",
